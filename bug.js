@@ -1,0 +1,1 @@
+This bug occurs when using the Expo `Linking` API to handle deep links.  If the app is opened from a deep link, but then immediately closed, subsequent attempts to open the app from the same deep link may fail silently.  The `getInitialURL` method returns null, even though the app was launched with a URL.
